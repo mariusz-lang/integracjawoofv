@@ -1,0 +1,384 @@
+# WooCommerce Fakturownia Changelog
+
+## [1.10.6] - 2025-10-22
+### Changed
+- Plugin links
+
+## [1.10.5] - 2025-10-21
+### Added
+- Filter wc_eu_vat_order_country_to_compare_with_geolocation for managing country in geolocation comparision
+
+## [1.10.4] - 2025-10-07
+### Fixed
+- Belgium VAT number validation
+
+## [1.10.3] - 2025-09-21
+### Added
+- Support for WooCommerce 10.2
+
+## [1.10.2] - 2025-09-18
+### Fixed
+- Price synchronisation with newly added products
+### Changed
+- Slightly changed Stock tab
+
+## [1.10.1] - 2025-09-15
+### Fixed
+- Price synchronisation option
+
+## [1.10.0] - 2025-09-11
+### Added
+- Price synchronisation between WooCommerce products and Fakturownia warehouse
+### Fixed
+- Tax rates on foreign invoices while using OSS
+
+## [1.9.15] - 2025-08-07
+### Added
+- Support for WooCommerce 10.1
+
+## [1.9.14] - 2025-07-17
+### Added
+- Support for WooCommerce 10.0
+
+## [1.9.13] - 2025-07-09
+### Fixed
+- Undefined variable $sent_to_admin warning in emails sent from plugin
+- Fixed problem with partial refunds and incorrect correction details
+- Fixed OSS verification for Greek vat numbers starting with EL
+
+## [1.9.12] - 2025-06-02
+### Fixed
+- Docs links
+
+## [1.9.11] - 2025-05-12
+### Added
+- Support for WordPress 6.8
+
+## [1.9.10] - 2025-04-14
+### Fixed
+- Calculation of invoice correction
+
+## [1.9.9] - 2025-03-21
+### Added
+- Support for WooCommerce 9.8
+
+## [1.9.8] - 2025-03-13
+### Fixed
+- Issuing correction for items connected with warehouse
+
+## [1.9.7] - 2025-02-26
+### Added
+- Translations in /my-account/ page for document names
+### Fixed
+- Invoice download urls in /my-account/ page
+
+## [1.9.6] - 2025-01-16
+### Fixed
+- Fixed lump sum settings for invoices without vat
+- Fixed corrections for invoices without vat
+
+## [1.9.5] - 2025-01-13
+### Fixed
+- Fixed problem with blank VAT number field when updating order billing data from profile
+
+## [1.9.4] - 2025-01-09
+### Fixed
+- Fixed notice on orders page
+- Fixed a problem with taxes for non-shipping items when the calculation of taxes was based on the store address
+
+## [1.9.3] - 2025-01-07
+### Fixed
+- Fixed problem with duplicate invoices
+
+## [1.9.2] - 2024-12-21
+### Added
+- Support for WooCommerce 9.6
+
+## [1.9.1] - 2024-12-16
+### Fix
+- Downloading invoices from email links
+- Notice in order column and order metabox
+
+## [1.9.0] - 2024-12-12
+### Added
+- Lump sum support
+- Corrections support
+
+## [1.8.6] - 2024-11-21
+### Added
+- Support for WooCommerce 9.5
+
+## [1.8.5] - 2024-09-20
+### Added
+- Support for WordPress 6.7
+
+## [1.8.4] - 2024-09-07
+### Added
+- Support for WooCommerce 9.3
+
+## [1.8.3] - 2024-08-07
+### Added
+- Support for WordPress 6.6
+- Support for WooCommerce 9.2
+
+## [1.8.2] - 2024-06-26
+### Fixed
+- Poprawiono dane klienta dla faktury
+
+## [1.8.1] - 2024-06-25
+### Fixed
+- Poprawiono hook dla wiadomości email
+- Poprawiono nazwy dla produktów wariantowych
+- Poprawiono walidację dla bloków
+- Poprawiono przekazywane dane kontrahenta na podstawie ustawień Woo
+
+## [1.8.0] - 2024-03-13
+### Fixed
+- Dodano obsługę dla bloku zamówienia
+- Support for WooCommerce 8.7
+
+## [1.7.7] - 2024-02-12
+### Fixed
+- Poprawiono tryb debugowania
+
+## [1.7.6] - 2024-01-03
+### Fixed
+- Poprawiono błąd dla blokowanego widoku zamówień przez pobrany html z fakturowni w trybie konserwacji
+### Added
+- Support for WordPress 6.4
+- Support for WooCommerce 8.4
+
+## [1.7.5] - 2023-07-20
+### Added
+- Support for WooCommerce 8.0
+
+## [1.7.4] - 2023-07-03
+## Added
+- Licence library
+- Support for WooCommerce 7.8
+
+## [1.7.3] - 2023-03-16
+## Fixed
+- Poprawiono walidację pola NIP
+
+## [1.7.2] - 2023-03-01
+### Added
+- Support for WooCommerce 7.5
+- Support for WooCommerce 7.4
+
+## [1.7.1] - 2022-12-20
+### Fixed
+- Fixed changelog
+
+## [1.7.0] - 2022-12-18
+### Added
+- Support for WordPress 6.1
+- Support for WooCommerce 7.1
+
+## [1.6.12] - 2022-10-03
+### Added
+- Support for WooCommerce 7.0
+
+## [1.6.11] - 2022-09-05
+### Fixed
+- Poprawiono dodawanie produktu do magazynu, gdy synchronizacja jest wyłączona
+
+## [1.6.10] - 2022-09-01
+- Dodano wsparcie dla Flexible Quantity
+- Dodano zabezpieczenie przed ponownym utworzeniem tego samego dokumentu w ramach zamówienia
+
+## [1.6.9] - 2022-07-20
+- Dodano obsługę paragonu dla zagranicy
+
+## [1.6.8] - 2022-05-19
+- Dodano logger
+- Dodano pole NIP do konta użytkownika
+
+## [1.6.7] - 2022-04-27
+- Aktualizacja biblioteki
+
+## [1.6.6] - 2022-04-27
+- Poprawiono wystawianie faktury jeżeli wystawiona jest proforma
+
+## [1.6.5] - 2022-03-17
+- Dodano hook fakturownia/warehouse/init
+- Poprawiono błąd z podwójnym wystawianiem faktury
+- Zaktualizowano bibliotekę EU VAT
+
+## [1.6.4] - 2021-12-20
+- Poprawiono błąd dla odwrotnego obciązenia na fakturach B2B
+
+## [1.6.3] - 2021-10-18
+- Poprawiono termin płatności dla proformy
+
+## [1.6.2] - 2021-09-23
+- Dodano hooki
+
+## [1.6.1] - 2021-08-26
+- Poprawiono błąd dla automatycznej wysyłki faktury proforma bez VAT
+
+## [1.6.0] - 2021-07-29
+- Dodano wsparcie dla OSS
+- Poprawiono wybór języka dla faktury
+
+## [1.5.6] - 2021-06-29
+- Poprawiono konflikt z wtyczkami które używały hooka woocommerce_email_after_order_table
+- Poprawiono błąd przy pobieraniu faktury gdy włączone są dwie integracje fakturowe
+- Poprawiono błąd daty
+
+## [1.5.5] - 2021-05-06
+- Poprawiono błąd dla ustawień statusów dla rachunków
+
+## [1.5.4] - 2021-05-04
+- Poprawiono obsługę magazynów
+- Poprawiono wystawianie paragonów
+
+## [1.5.3] - 2021-04-12
+- Poprawiono fakturę bez VAT
+
+## [1.5.2] - 2021-03-18
+- Poprawiono błąd dla obsługi magazynów przy wyszukiwaniu produktu
+- Poprawiono obsługę wystawianie automatycznie dokumentów
+
+## [1.5.1] - 2021-02-24
+- Poprawiono błąd dla obsługi magazynów
+
+## [1.5.0] - 2021-02-24
+- Dodano obsługę wielu magazynów
+- Dodano obsługę dla oznaczenia transakcji przychodowej
+- Dodano możliwość generowania automatycznie faktur proform dla określonego statusu zamówienia
+
+## [1.4.10] - 2021-02-10
+- Dodano wsparcie dla WooCommerce 5.0
+
+## [1.4.9] - 2021-01-25
+- Poprawiono błąd dla numeru VAT z MOSS
+
+## [1.4.8] - 2021-01-20
+- Poprawiono stawkę np dla krajów spoza UE
+- Usunięto UK z krajów UE
+
+## [1.4.7] - 2021-01-11
+- Porzucono wsparcie EU VAT dla UK
+- Poprawiono błąd dla hooka w treści maila
+
+## [1.4.6] - 2020-12-29
+- Poprawiono błąd dla kraju kupującego
+
+## [1.4.5] - 2020-12-23
+- Dodano filtr fakturownia/core/create_product/name dla nazwy tworzonego produktu przy włączonej synchronizacji
+- Dodano filtr fakturownia/core/create_product/sku dla SKU tworzonego produktu przy włączonej synchronizacji
+- Dodano filtr fakturownia/core/create_product/description dla opisu tworzonego produktu przy włączonej synchronizacji
+- Dodano filtr fakturownia/core/create_product/img_url dla adresu url obrazak tworzonego produktu przy włączonej synchronizacji
+- Poprawiono wystawianie faktur dla wariantów z włączonym magazynem dla produktu rodzica
+- Poprawiono debugowanie błędów
+
+## [1.4.4] - 2020-12-03
+- Poprawiono request z cenami dla API fakturowni
+
+## [1.4.3] - 2020-10-15
+- Poprawiono obsługę kodu GTU
+- Rozwiązano konflikt z Checkout Field Editor and Manager for WooCommerce
+- Poprawiono fakturę za pobraniem dla statusu "w trakcie realizacji"
+- Poprawiono błąd dla hooków zdefiniowanych w szablonach emaili
+
+## [1.4.2] - 2020-09-30
+- Dodano obsługę kodów GTU
+
+## [1.4.1] - 2020-08-04
+- Poprawiono błąd dla tabeli przewalutowania dla rachunków
+- Poprawiono błąd dla języka rachunku
+
+## [1.4.0] - 2020-07-02
+- Dodano automatyczne pobieranie nazwy płatności dla wystawianej faktury
+- Dodano obsługę działów/firm dla fakturowni
+- Dodano obsługę dokumentów walutowych (paragony, rachunki)
+- Dodano odnośnik URL do pliku PDF w treści maila dla wszystkich dokumentów
+- Dodano warunek dla wystawiania paraganów bez faktur
+- Poprawiono błąd dla automatycznego wysyłania paragonów na adres e-mail
+- Poprawiono błąd dla wystawianego paragonu dla innego statusu zamówienia niż faktura
+- Poprawiono błąd języka faktury dla dokumentów (paragony, faktury, faktury bez vat)
+
+## [1.3.10] - 2020-06-18
+- Usunięcie walidacji dla daty sprzedaży
+
+## [1.3.9] - 2020-05-25
+- Poprawiono kolumnę PKWIU
+- Dodano obsługę debugowania
+
+## [1.3.8] - 2020-05-14
+- Poprawiono błąd dla faktur bez VAT dla klienta zagranicznego
+- Dodano UK dla MOSS
+- Dodano uwagi dla zamówień MOSS
+- Usunięto opcję usuwania VAT z kraju bazowego
+- Poprawiono błąd dla automatycznej wysyłki faktury przy złej konfiguracji
+
+## [1.3.7] - 2020-04-21
+- Poprawiono wystawianie faktury walutowej.
+
+## [1.3.6] - 2020-03-26
+- Poprawiono błąd dla nazwy płatności dla DotPay, PayU i PayPal na fakturze
+- Poprawiono błąd wystawiania faktury proforma w przypadku timeoutu zwykłej faktury
+- Poprawiono błąd liczenia podwójnego przychodu
+- Poprawiono błąd dla stawki MOSS
+
+## [1.3.5] - 2020-03-11
+- Dodanie wsparcia dla WooCommerce 4.0
+
+## [1.3.4] - 2020-01-30
+- Poprawiono walidację pola NIP
+- Poprawiono etykiety pola NIP
+
+## [1.3.3] - 2020-01-22
+- Poprawiono błąd dla faktury z kolumną 0 VAT
+- Poprawiono błąd dla paragonu z kolumną 0 VAT
+- Poprawiono błąd tworzenia i wysyłanie automatycznego faktury proforma
+- Wyłączenie VIES dla kont bez VAT.
+
+## [1.3.2] - 2019-01-07
+- Poprawiono błąd obliczania ceny na fakturze
+
+## [1.3.1] - 2019-12-31
+- Dodanie wsparcia dla WooCommerce 3.9
+
+## [1.3.0] - 2019-12-17
+- Dodanie wsparcia dla faktur walutowych
+- Dodanie wsparcia dla paragonów
+- Dodanie wsparcia dla MOSS
+
+## [1.2.3] - 2019-11-05
+- Dodanie wsparcia dla WooCommerce 3.8
+- Dodanie wsparcia dla WordPress 5.3
+
+## [1.2.2] - 2019-10-09
+- Dodanie obsługi zamówień bez produktów oraz z pozycjami o zerowej wartości
+
+## [1.2.1] - 2019-09-20
+- Poprawiono błąd powodującego warningi w debug.log przy walidacji numeru NIP
+
+## [1.2.0] - 2019-09-12
+- Dodano prefixowanie bibliotek
+
+## [1.1.4] - 2019-09-02
+- Poprawiono zmiany statusu zamówienia gdy api reaguje błędem
+
+## [1.1.3] - 2019-08-09
+- Poprawiono błąd związanego z generowaniem tokenu synchronizacji magazynu
+
+## [1.1.2] - 2019-08-06
+- Poprawiono błąd wyświetlania pól formularza konfiguracji wtyczki przy wyłączonych podatkach
+
+## [1.1.1] - 2019-07-16
+- Poprawiono błąd związanego z obsługą wariantów: Undefined class constant
+- Poprawiono warninga związanego z trackowaniem
+
+## [1.1] - 2019-06-27
+- Dodanie obsługi magazynu Fakturowni
+- Dodanie walidacji NIP na etapie checkout
+- Dodanie obsługi stawki ZW
+- Dodanie wyboru typu wystawianego dokumentu gdy wyłączone podatki
+- Dodanie obsługi faktury proforma
+- Usunięcie wymagalności subskrypcji
+
+## [1.0] - 2019-05-29
+- Pierwsze wydanie!

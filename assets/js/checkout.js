@@ -1,0 +1,1 @@
+!function(i){let n=jQuery("#billing_faktura, #billing_rachunek"),e=jQuery("#billing_nip_field");n.length&&(e.hide(),n.prop("checked")?e.show():e.find("input").val(""),n.click((function(n){i(this).prop("checked")?e.show():(e.hide(),e.find("input").val(""))})))}(jQuery);

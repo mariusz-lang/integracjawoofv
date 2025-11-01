@@ -1,0 +1,1708 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce Fakturownia 1.10.6\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/woocommerce-fakturownia\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-10-22T06:50:04+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Language: pl_PL\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: woocommerce-fakturownia\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-Basepath: ../src\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SearchPathExcluded-1: vendor_prefixed\n"
+"X-Poedit-SearchPathExcluded-2: vendor\n"
+
+#. Plugin Name of the plugin
+#: woocommerce-fakturownia.php
+msgid "WooCommerce Fakturownia"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: woocommerce-fakturownia.php
+msgid "https://www.wpdesk.pl/sk/woocommerce-fakturownia-plugin/"
+msgstr ""
+
+#. Description of the plugin
+#: woocommerce-fakturownia.php
+msgid "Wtyczka integrująca WooCommerce z programem do faktur online Fakturownia."
+msgstr ""
+
+#. Author of the plugin
+#: woocommerce-fakturownia.php
+msgid "WP Desk"
+msgstr ""
+
+#. Author URI of the plugin
+#: woocommerce-fakturownia.php
+msgid "https://www.wpdesk.pl/sk/woocommerce-fakturownia-author/"
+msgstr ""
+
+#. Translators: response code.
+#: src/Api/FakturowniaApi.php:154
+#, php-format
+msgid "Błąd API Fakturownia! Kod błędu: %1$s %2$s."
+msgstr ""
+
+#: src/Api/FakturowniaApi.php:170
+msgid "Termin płatności faktury nie może być wcześniejszy niż data wystawienia!"
+msgstr ""
+
+#: src/Api/FakturowniaApi.php:174
+msgid "Termin płatności faktury nie może być wcześniejszy niż data sprzedaży!"
+msgstr ""
+
+#. Translators: product code.
+#: src/Api/FakturowniaApi.php:393
+#, php-format
+msgid "Istnieje wiele produków o kodzie: %1$s."
+msgstr ""
+
+#. Translators: product code.
+#: src/Api/FakturowniaApi.php:399
+#, php-format
+msgid "Nie znaleziono żadnego produku o kodzie: %1$s."
+msgstr ""
+
+#: src/Block/VatNumber/DataStore.php:100
+msgid "Location confirmation."
+msgstr ""
+
+#: src/Block/VatNumber/DataStore.php:105
+msgid "Vat confirmation."
+msgstr ""
+
+#: src/Block/VatNumber/RegisterCheckoutBlocks.php:117
+#, fuzzy
+msgid "Vat Number"
+msgstr "Uzupełnij NIP"
+
+#: src/Block/VatNumber/RegisterCheckoutBlocks.php:118
+msgid "Enter the correct VAT number for your country."
+msgstr ""
+
+#. Translators: woocommerce tax settings URL.
+#: src/ConfigInfo.php:29
+#, php-format
+msgid "WooCommerce ma wyłączone zaokrąglanie podatków na podsumach. Do prawidłowego działania wtyczki Fakturownia konieczne jest włączenie zaokrąglania podatków na podsumie, a nie per wiersz. Kliknij %1$stutaj%2$s aby przejść do konfiguracji podatków."
+msgstr ""
+
+#. Translators: woocommerce settings URL.
+#: src/ConfigInfo.php:41
+#, php-format
+msgid "Liczba znaków po przecinku jest ustawione na wartość większą od 2. Do prawidłowego działania wtyczki Fakturownia konieczne jest ustawianie tej wartości na 2 lub mniej. Kliknij %1$stutaj%2$s aby przejść do ustawień głównych."
+msgstr ""
+
+#: src/Data/DocumentData.php:242
+msgid "Zamówienie nie zawiera pozycji o niezerowej wartości!"
+msgstr ""
+
+#. Translators: product name.
+#: src/Data/DocumentData.php:804
+#, php-format
+msgid "Produkt %1$s nie jest powiązany z żadnym produktem w Fakturowni oraz nie ma zdefiniowanego SKU."
+msgstr ""
+
+#: src/Data/DocumentData.php:1087
+msgid "Reverse charge"
+msgstr "Odwrotne obciążenie"
+
+#: src/Data/InvoiceCorrectionData.php:55
+msgid "Refund not found."
+msgstr ""
+
+#: src/Data/InvoiceCorrectionData.php:95
+msgid "Parent invoice ID not found."
+msgstr "Nie znaleziono faktury do której można wystawić korektę."
+
+#: src/Data/InvoiceOrderDefaults.php:120
+#: src/Metabox/MetaBoxFields.php:117
+msgid "Przelew"
+msgstr ""
+
+#: src/Data/InvoiceOrderDefaults.php:121
+#: src/Metabox/MetaBoxFields.php:118
+msgid "Karta płatnicza"
+msgstr ""
+
+#: src/Data/InvoiceOrderDefaults.php:122
+#: src/Metabox/MetaBoxFields.php:119
+msgid "Gotówka"
+msgstr ""
+
+#: src/Documents/BillCreator.php:59
+#: src/Documents/InvoiceCreator.php:59
+#: src/Documents/ReceiptCreator.php:59
+msgid "Ten typ dokumentu nie jest obsługiwany!"
+msgstr ""
+
+#. Translators: type name and document number.
+#: src/Documents/DocumentCreator.php:143
+#, php-format
+msgid "Fakturownia - wystawiono dokument: %1$s %2$s"
+msgstr ""
+
+#. Translators: type name and document number.
+#: src/Documents/DocumentCreator.php:161
+#, php-format
+msgid "Fakturownia - błąd przy wystawianiu dokumentu %1$s: %2$s"
+msgstr ""
+
+#. Translators: currency.
+#: src/Documents/DocumentCreator.php:194
+#, php-format
+msgid "Błędna waluta: %1$s"
+msgstr ""
+
+#. Translators: email title.
+#: src/Emails/BaseEmail.php:43
+#, php-format
+msgid "Fakturownia - wysłano email: %1$s"
+msgstr ""
+
+#. Translators: type name and document number.
+#: src/Emails/BaseEmail.php:51
+#, php-format
+msgid "Fakturownia - błąd przy wysyłania emaila: %1$s"
+msgstr ""
+
+#: src/Emails/EmailBill.php:20
+msgid "Rachunek (Fakturownia)"
+msgstr ""
+
+#: src/Emails/EmailBill.php:21
+msgid "Email z rachunkiem."
+msgstr ""
+
+#: src/Emails/EmailBill.php:22
+msgid "Rachunek do zamówienia"
+msgstr ""
+
+#: src/Emails/EmailBill.php:23
+msgid "[{site_title}] Rachunek do zamówienia {order_number} - {order_date}"
+msgstr ""
+
+#: src/Emails/EmailCorrection.php:20
+msgid "Faktura korygująca (Fakturownia)"
+msgstr ""
+
+#: src/Emails/EmailCorrection.php:21
+msgid "Email z fakturą korygującą (Fakturownia)."
+msgstr ""
+
+#: src/Emails/EmailCorrection.php:22
+msgid "Faktura korygująca do zamówienia"
+msgstr ""
+
+#: src/Emails/EmailCorrection.php:23
+msgid "[{site_title}] Faktura korygująca do zamówienia {order_number} - {order_date}"
+msgstr ""
+
+#: src/Emails/EmailInvoice.php:20
+msgid "Faktura (Fakturownia)"
+msgstr ""
+
+#: src/Emails/EmailInvoice.php:21
+msgid "Email z fakturą (Fakturownia)."
+msgstr ""
+
+#: src/Emails/EmailInvoice.php:22
+msgid "Faktura do zamówienia"
+msgstr ""
+
+#: src/Emails/EmailInvoice.php:23
+msgid "[{site_title}] Faktura do zamówienia {order_number} - {order_date}"
+msgstr ""
+
+#: src/Emails/EmailInvoiceForeign.php:20
+msgid "Faktura walutowa (Fakturownia)"
+msgstr ""
+
+#: src/Emails/EmailInvoiceForeign.php:21
+msgid "Email z fakturą walutową (Fakturownia)."
+msgstr ""
+
+#: src/Emails/EmailInvoiceForeign.php:22
+msgid "Faktura walutowa do zamówienia"
+msgstr ""
+
+#: src/Emails/EmailInvoiceForeign.php:23
+msgid "[{site_title}] Faktura walutowa do zamówienia {order_number} - {order_date}"
+msgstr ""
+
+#: src/Emails/EmailInvoiceProForma.php:20
+msgid "Faktura Pro Forma (Fakturownia)"
+msgstr ""
+
+#: src/Emails/EmailInvoiceProForma.php:21
+msgid "Email z fakturą pro forma."
+msgstr ""
+
+#: src/Emails/EmailInvoiceProForma.php:22
+msgid "Faktura Pro Forma do zamówienia"
+msgstr ""
+
+#: src/Emails/EmailInvoiceProForma.php:23
+msgid "[{site_title}] Faktura Pro Forma do zamówienia {order_number} - {order_date}"
+msgstr ""
+
+#: src/Emails/EmailReceipt.php:20
+msgid "Paragon (Fakturownia)"
+msgstr ""
+
+#: src/Emails/EmailReceipt.php:21
+msgid "Email z paragonem."
+msgstr ""
+
+#: src/Emails/EmailReceipt.php:22
+msgid "Paragon do zamówienia"
+msgstr ""
+
+#: src/Emails/EmailReceipt.php:23
+msgid "[{site_title}] Paragon do zamówienia {order_number} - {order_date}"
+msgstr ""
+
+#. translators: VAT number
+#: src/Field/Validator/ValidateVatNumber.php:134
+#, php-format
+msgid "The entered VAT number (%s) is incorrect. Use only letters and numbers (for example: DE109025001)."
+msgstr "Wprowadzony numer NIP (%s) jest nieprawidłowy. Użyj jedynie liczb (np 1090290010)."
+
+#: src/Forms/Integration/AuthorizationForm.php:51
+msgid "Autoryzacja"
+msgstr ""
+
+#: src/Forms/Integration/AuthorizationForm.php:55
+msgid "API Token"
+msgstr ""
+
+#: src/Forms/Integration/AuthorizationForm.php:57
+msgid "Token w serwisie fakturownia.pl znajdziesz w menu Ustawienia &rarr; Ustawienia konta &rarr; Integracja."
+msgstr ""
+
+#: src/Forms/Integration/AuthorizationForm.php:62
+msgid "Domena"
+msgstr ""
+
+#: src/Forms/Integration/AuthorizationForm.php:64
+msgid "Domena w serwisie fakturownia.pl to pierwszy człon adresu logowania dla konta, np. dla https://wpdesk.fakturownia.pl/ będzie to wpdesk."
+msgstr ""
+
+#: src/Forms/Integration/AuthorizationForm.php:69
+msgid "ID Firmy"
+msgstr ""
+
+#: src/Forms/Integration/AuthorizationForm.php:71
+msgid "Pole opcjonalne. Uzupełnij ID firmy lub działu, z którym chcesz zintegrować wtyczkę. Znajdziesz je w adresie URL na stronie edycji firmy/działu w Ustawienia &rarr; Dane firmy."
+msgstr ""
+
+#: src/Forms/Integration/BillForm.php:93
+#: src/Forms/Integration/BillForm.php:108
+msgid "Wystawianie faktur bez VAT"
+msgstr ""
+
+#: src/Forms/Integration/BillForm.php:97
+msgid "Typ dokumentu"
+msgstr ""
+
+#: src/Forms/Integration/BillForm.php:99
+msgid "Typ wystawianych dokumentów."
+msgstr ""
+
+#: src/Forms/Integration/BillForm.php:102
+msgid "Rachunki"
+msgstr ""
+
+#: src/Forms/Integration/BillForm.php:103
+msgid "Faktury bez VAT"
+msgstr ""
+
+#: src/Forms/Integration/BillForm.php:113
+#: src/Forms/Integration/InvoiceForm.php:107
+#: src/Forms/Integration/InvoiceForm.php:111
+msgid "Wystawianie faktur"
+msgstr ""
+
+#: src/Forms/Integration/BillForm.php:115
+msgid "Sposób wystawiania faktur."
+msgstr ""
+
+#: src/Forms/Integration/BillForm.php:122
+#: src/Forms/Integration/BillForm.php:162
+#: src/Forms/Integration/BillForm.php:257
+#: src/Forms/Integration/InvoiceForm.php:123
+#: src/Forms/Integration/InvoiceForm.php:233
+#: src/Forms/Integration/ReceiptForm.php:89
+msgid "Status zamówienia"
+msgstr ""
+
+#: src/Forms/Integration/BillForm.php:124
+msgid "W przypadku automatycznego wystawiania faktur (Zawsze) lub faktur wystawianych na życzenie kupującego (Pytaj kupującego), wybierz status zamówienia przy którym faktura zostanie automatycznie wystawiona."
+msgstr ""
+
+#: src/Forms/Integration/BillForm.php:134
+#: src/Forms/Integration/InvoiceForm.php:135
+msgid "Automatycznie wysyłaj faktury po wystawieniu"
+msgstr ""
+
+#: src/Forms/Integration/BillForm.php:141
+#: src/Forms/Integration/InvoiceForm.php:142
+msgid "Automatycznie wystawiaj korekty po zwrocie"
+msgstr ""
+
+#: src/Forms/Integration/BillForm.php:142
+#: src/Forms/Integration/InvoiceForm.php:143
+msgid "Automatycznie wystawiaj korekty po zwrocie zamówienia"
+msgstr ""
+
+#: src/Forms/Integration/BillForm.php:149
+#: src/Forms/Integration/BillForm.php:154
+msgid "Wystawianie rachunków"
+msgstr ""
+
+#: src/Forms/Integration/BillForm.php:164
+#: src/Forms/Integration/ReceiptForm.php:91
+msgid "Wybierz status zamówienia przy którym rachunek zostanie automatycznie wystawiony."
+msgstr ""
+
+#: src/Forms/Integration/BillForm.php:171
+msgid "Automatycznie wysyłaj rachunki po wystawieniu"
+msgstr ""
+
+#: src/Forms/Integration/BillForm.php:178
+msgid "Język rachunków/faktur"
+msgstr ""
+
+#: src/Forms/Integration/BillForm.php:181
+#: src/Forms/Integration/InvoiceForm.php:202
+#: src/Forms/Integration/ReceiptForm.php:135
+msgid "Język kraju klienta, jeżeli dostępny lub angielski"
+msgstr ""
+
+#: src/Forms/Integration/BillForm.php:182
+#: src/Forms/Integration/InvoiceForm.php:203
+#: src/Forms/Integration/ReceiptForm.php:136
+msgid "Zawsze angielski"
+msgstr ""
+
+#: src/Forms/Integration/BillForm.php:183
+#: src/Forms/Integration/InvoiceForm.php:204
+#: src/Forms/Integration/ReceiptForm.php:137
+msgid "Zawsze polski"
+msgstr ""
+
+#: src/Forms/Integration/BillForm.php:185
+#: src/Forms/Integration/InvoiceForm.php:206
+#: src/Forms/Integration/ReceiptForm.php:139
+msgid "Dostępne języki: pl, en, en-GB, ar, cn, cz, de, es, et, fa, fr, hu, hr, it, nl, ru, sk, sl, tr"
+msgstr ""
+
+#: src/Forms/Integration/BillForm.php:192
+msgid "Parametry rachunku"
+msgstr ""
+
+#: src/Forms/Integration/BillForm.php:197
+#: src/Forms/Integration/InvoiceForm.php:150
+msgid "Parametry faktury"
+msgstr ""
+
+#: src/Forms/Integration/BillForm.php:203
+#: src/Forms/Integration/InvoiceForm.php:180
+msgid "Włącz sprawdzanie poprawności numeru NIP na stronie zamówienia"
+msgstr ""
+
+#: src/Forms/Integration/BillForm.php:204
+#: src/Forms/Integration/InvoiceForm.php:181
+msgid "Poprawność numeru NIP"
+msgstr ""
+
+#: src/Forms/Integration/BillForm.php:206
+#: src/Forms/Integration/InvoiceForm.php:183
+msgid "Niepoprawny NIP zablokuje możliwość złożenia zamówienia."
+msgstr ""
+
+#: src/Forms/Integration/BillForm.php:211
+msgid "Termin płatności dla dokumentów wysyłkowych (za pobraniem)"
+msgstr ""
+
+#: src/Forms/Integration/BillForm.php:218
+#: src/Forms/Integration/InvoiceForm.php:172
+msgid "Podstawa prawna zwolnienia"
+msgstr ""
+
+#: src/Forms/Integration/BillForm.php:220
+#: src/Forms/Integration/InvoiceForm.php:174
+msgid "Numer artykułu, uprawniającego do zwolnienia, np. dla zwolnienia podmiotowego: Art. 113 ust. 1."
+msgstr ""
+
+#: src/Forms/Integration/BillForm.php:226
+#: src/Forms/Integration/InvoiceForm.php:194
+msgid "Miejsce wystawienia"
+msgstr ""
+
+#: src/Forms/Integration/BillForm.php:232
+#: src/Forms/Integration/InvoiceForm.php:210
+#: src/Forms/Integration/ReceiptForm.php:146
+msgid "Uwagi do dokumentu"
+msgstr ""
+
+#. Translators: order number shortcode.
+#: src/Forms/Integration/BillForm.php:236
+#: src/Forms/Integration/InvoiceForm.php:214
+#: src/Forms/Integration/ReceiptForm.php:150
+#, php-format
+msgid "Możesz użyć shortcode %1$s - numer zamówienia."
+msgstr ""
+
+#: src/Forms/Integration/BillForm.php:244
+#: src/Forms/Integration/InvoiceForm.php:222
+msgid "Parametry faktury proforma"
+msgstr ""
+
+#: src/Forms/Integration/BillForm.php:249
+#: src/Forms/Integration/InvoiceForm.php:226
+msgid "Termin płatności dla faktur pro forma"
+msgstr ""
+
+#: src/Forms/Integration/BillForm.php:259
+#: src/Forms/Integration/InvoiceForm.php:235
+msgid "Wybierz status zamówienia przy którym faktura proforma zostanie automatycznie wystawiona."
+msgstr ""
+
+#: src/Forms/Integration/BillForm.php:269
+#: src/Forms/Integration/InvoiceForm.php:245
+msgid "Automatycznie wysyłaj faktury proformy po wystawieniu"
+msgstr ""
+
+#: src/Forms/Integration/BillForm.php:289
+#: src/Forms/Integration/InvoiceForm.php:114
+#: src/Forms/Integration/ReceiptForm.php:81
+msgid "Ręcznie"
+msgstr ""
+
+#: src/Forms/Integration/BillForm.php:290
+#: src/Forms/Integration/InvoiceForm.php:115
+msgid "Pytaj kupującego i nie wystawiaj automatycznie"
+msgstr ""
+
+#: src/Forms/Integration/BillForm.php:291
+#: src/Forms/Integration/InvoiceForm.php:116
+msgid "Pytaj kupującego i wystawiaj automatycznie"
+msgstr ""
+
+#: src/Forms/Integration/BillForm.php:292
+#: src/Forms/Integration/InvoiceForm.php:117
+msgid "Zawsze, automatycznie"
+msgstr ""
+
+#: src/Forms/Integration/BillForm.php:303
+#: src/Forms/Integration/InvoiceForm.php:321
+#: src/Forms/Integration/ReceiptForm.php:114
+msgid "1 dzień"
+msgstr ""
+
+#: src/Forms/Integration/BillForm.php:304
+#: src/Forms/Integration/InvoiceForm.php:322
+#: src/Forms/Integration/ReceiptForm.php:115
+msgid "2 dni"
+msgstr ""
+
+#: src/Forms/Integration/BillForm.php:305
+#: src/Forms/Integration/InvoiceForm.php:323
+#: src/Forms/Integration/ReceiptForm.php:116
+msgid "3 dni"
+msgstr ""
+
+#: src/Forms/Integration/BillForm.php:306
+#: src/Forms/Integration/InvoiceForm.php:324
+#: src/Forms/Integration/ReceiptForm.php:117
+msgid "4 dni"
+msgstr ""
+
+#: src/Forms/Integration/BillForm.php:307
+#: src/Forms/Integration/InvoiceForm.php:325
+#: src/Forms/Integration/ReceiptForm.php:118
+msgid "5 dni"
+msgstr ""
+
+#: src/Forms/Integration/BillForm.php:308
+#: src/Forms/Integration/InvoiceForm.php:326
+#: src/Forms/Integration/ReceiptForm.php:119
+msgid "6 dni"
+msgstr ""
+
+#: src/Forms/Integration/BillForm.php:309
+#: src/Forms/Integration/InvoiceForm.php:327
+#: src/Forms/Integration/ReceiptForm.php:120
+msgid "7 dni"
+msgstr ""
+
+#: src/Forms/Integration/BillForm.php:310
+#: src/Forms/Integration/InvoiceForm.php:328
+#: src/Forms/Integration/ReceiptForm.php:121
+msgid "8 dni"
+msgstr ""
+
+#: src/Forms/Integration/BillForm.php:311
+#: src/Forms/Integration/InvoiceForm.php:329
+#: src/Forms/Integration/ReceiptForm.php:122
+msgid "9 dni"
+msgstr ""
+
+#: src/Forms/Integration/BillForm.php:312
+#: src/Forms/Integration/InvoiceForm.php:330
+#: src/Forms/Integration/ReceiptForm.php:123
+msgid "10 dni"
+msgstr ""
+
+#: src/Forms/Integration/BillForm.php:313
+#: src/Forms/Integration/InvoiceForm.php:331
+#: src/Forms/Integration/ReceiptForm.php:124
+msgid "11 dni"
+msgstr ""
+
+#: src/Forms/Integration/BillForm.php:314
+#: src/Forms/Integration/InvoiceForm.php:332
+#: src/Forms/Integration/ReceiptForm.php:125
+msgid "12 dni"
+msgstr ""
+
+#: src/Forms/Integration/BillForm.php:315
+#: src/Forms/Integration/InvoiceForm.php:333
+#: src/Forms/Integration/ReceiptForm.php:126
+msgid "13 dni"
+msgstr ""
+
+#: src/Forms/Integration/BillForm.php:316
+#: src/Forms/Integration/InvoiceForm.php:334
+#: src/Forms/Integration/ReceiptForm.php:127
+msgid "14 dni"
+msgstr ""
+
+#: src/Forms/Integration/DebugForm.php:32
+#: src/Forms/Integration/DebugForm.php:37
+msgid "Tryb debugowania"
+msgstr ""
+
+#: src/Forms/Integration/DebugForm.php:34
+msgid "Zapis komunikatów do pliku"
+msgstr ""
+
+#: src/Forms/Integration/DebugForm.php:38
+msgid "Włącz tryb debugowania"
+msgstr ""
+
+#. Translators: woocommerce logs
+#: src/Forms/Integration/DebugForm.php:42
+#, php-format
+msgid "Włączenie spowoduje utworzenie pliku fakturownia.log. Zapis logów można sprawdzić <a href=\"%s\">tutaj &rarr;</a><br/><a href=\"https://wpdesk.pl/sk/woocommerce-fakturownia-debug\" target=\"_blank\">Przeczytaj jak przeprowadzić proces debugowania &rarr;</a>"
+msgstr ""
+
+#: src/Forms/Integration/DebugForm.php:48
+msgid "Zablokuj żądanie API"
+msgstr ""
+
+#: src/Forms/Integration/DebugForm.php:49
+msgid "Włącz"
+msgstr ""
+
+#: src/Forms/Integration/DebugForm.php:51
+msgid "Zablokuj tworzenie dokumentów, gdy włączony jest tryb debugowania. Ustawienie to będzie włączone jedynie dla konta administratora."
+msgstr ""
+
+#: src/Forms/Integration/InvoiceForm.php:90
+#: src/InvoicesIntegration.php:104
+msgid "Brak"
+msgstr ""
+
+#: src/Forms/Integration/InvoiceForm.php:94
+msgid "Reject the order and show the customer an error message."
+msgstr "Nie pozwalaj na złożenie zamówienia i wyświetl komunikat błędu."
+
+#: src/Forms/Integration/InvoiceForm.php:95
+msgid "Accept the order, but do not remove VAT."
+msgstr "Zaakceptuj zamówienie ale nie usuwaj podatku VAT."
+
+#: src/Forms/Integration/InvoiceForm.php:96
+msgid "Accept the order and remove VAT."
+msgstr "Zaakceptuj zamówienie i usuń podatek VAT."
+
+#: src/Forms/Integration/InvoiceForm.php:125
+msgid "Wybierz status zamówienia przy którym faktura zostanie automatycznie wystawiona."
+msgstr ""
+
+#: src/Forms/Integration/InvoiceForm.php:154
+msgid "Klasa podatkowa dla stawki ZW"
+msgstr ""
+
+#: src/Forms/Integration/InvoiceForm.php:156
+msgid "Klasa podatkowa dla stawki ZW."
+msgstr ""
+
+#: src/Forms/Integration/InvoiceForm.php:162
+msgid "PKWiU"
+msgstr ""
+
+#: src/Forms/Integration/InvoiceForm.php:167
+msgid "Wpisz tutaj nazwę atrybutu, z którego będzie pobierany numer PKWiU."
+msgstr ""
+
+#: src/Forms/Integration/InvoiceForm.php:168
+msgid "W serwisie Fakturownia.pl, w Ustawienia → Konfiguracja → Faktury i Dokumenty, wśród pozycji faktury odnajdź „Dodatkowe pole”, wybierz „PKWiU”, a następnie zaznacz „Zawsze umieszczaj na fakturze”."
+msgstr ""
+
+#: src/Forms/Integration/InvoiceForm.php:188
+msgid "Termin płatności dla faktur wysyłkowych (za pobraniem)"
+msgstr ""
+
+#: src/Forms/Integration/InvoiceForm.php:199
+msgid "Język faktur"
+msgstr ""
+
+#: src/Forms/Integration/InvoiceForm.php:252
+msgid "Wsparcie dla OSS"
+msgstr ""
+
+#. translators: link.
+#: src/Forms/Integration/InvoiceForm.php:255
+#, php-format
+msgid "Procedura OSS jest rozszerzeniem MOSS. Od 07.2021 r. podatek VAT od wszystkich towarów musi być obliczany na podstawie lokalizacji klienta po przekroczeniu progu sprzedaży do krajów UE w wysokości 42.000 zł. Dlatego podczas transakcji należy potwierdzić adres IP i adres rozliczeniowy. Transakcje B2B podlegają odwrotnemu obciążeniu. <a href=\"%s\" target=\"_blank\">Przeczytaj ten przewodnik</a>, aby dowiedzieć się więcej."
+msgstr ""
+
+#: src/Forms/Integration/InvoiceForm.php:258
+msgid "Enable VIES Validation on checkout"
+msgstr "Włącz walidację VIES"
+
+#: src/Forms/Integration/InvoiceForm.php:259
+msgid "VIES Validation"
+msgstr "Walidacja VIES"
+
+#: src/Forms/Integration/InvoiceForm.php:261
+msgid "The VAT number field will be validated based on VIES."
+msgstr "Po włączeniu tej opcji numer VAT klienta zostanie zwalidowany w bazie VIES."
+
+#: src/Forms/Integration/InvoiceForm.php:266
+msgid "Failed Validation Handling"
+msgstr "Wybierz co robić, jeśli walidacja się nie powiedzie"
+
+#: src/Forms/Integration/InvoiceForm.php:274
+msgid "Stawki VAT dla OSS "
+msgstr ""
+
+#: src/Forms/Integration/InvoiceForm.php:280
+msgid "Select the tax classes that the plugin shall use to handling the MOSS."
+msgstr "Wybierz stawkę podatkową, z jakiej ma korzystać wtyczka do obsługi MOSS."
+
+#: src/Forms/Integration/InvoiceForm.php:283
+#: src/Forms/Integration/InvoiceForm.php:284
+msgid "Collect and Validate Evidence"
+msgstr "Pozwól na deklarowanie poprawności adresu"
+
+#: src/Forms/Integration/InvoiceForm.php:287
+msgid "Option validates the customer IP address against their billing address, and prompts the customer to self-declare their address if they do not match."
+msgstr "Opcja sprawdza poprawność adresu IP klienta na podstawie jego adresu płatności. Jeśli się nie zgadza pokazuje komunikat z prośbą o potwierdzenie adresu."
+
+#: src/Forms/Integration/InvoiceForm.php:306
+msgid "Standard"
+msgstr ""
+
+#: src/Forms/Integration/ReceiptForm.php:74
+#: src/Forms/Integration/ReceiptForm.php:78
+msgid "Wystawianie paragonów"
+msgstr ""
+
+#: src/Forms/Integration/ReceiptForm.php:82
+msgid "Automatycznie"
+msgstr ""
+
+#: src/Forms/Integration/ReceiptForm.php:83
+msgid "Automatycznie, jeśli kupujący nie chce faktury / rachunku"
+msgstr ""
+
+#: src/Forms/Integration/ReceiptForm.php:98
+msgid "Automatycznie wysyłaj paragon po wystawieniu"
+msgstr ""
+
+#: src/Forms/Integration/ReceiptForm.php:105
+msgid "Parametry paragonu"
+msgstr ""
+
+#: src/Forms/Integration/ReceiptForm.php:109
+msgid "Termin płatności dla paragonów"
+msgstr ""
+
+#: src/Forms/Integration/ReceiptForm.php:111
+msgid "Termin płatności dla paragonów w dniach."
+msgstr ""
+
+#: src/Forms/Integration/ReceiptForm.php:132
+msgid "Język paragonów"
+msgstr ""
+
+#: src/Forms/Integration/StockForm.php:82
+msgid "Magazyn"
+msgstr ""
+
+#: src/Forms/Integration/StockForm.php:87
+msgid "Synchronizacja"
+msgstr ""
+
+#: src/Forms/Integration/StockForm.php:88
+msgid "Włącz synchronizację stanów magazynowych"
+msgstr ""
+
+#. translators: %1$s link, %2$s close link.
+#: src/Forms/Integration/StockForm.php:93
+#, php-format
+msgid "Wymagana jest konfiguracja w fakturownia.pl. %1$sZapoznaj się z dokumentacją%2$s"
+msgstr ""
+
+#: src/Forms/Integration/StockForm.php:101
+msgid "Synchronizacja cen"
+msgstr ""
+
+#: src/Forms/Integration/StockForm.php:102
+msgid "Włącz synchronizację cen"
+msgstr ""
+
+#: src/Forms/Integration/StockForm.php:105
+msgid "Zaznacz tą opcję, aby włączyć synchronizację cen z Fakturownią. Włączenie tej opcji sprawi, że aktualizacja cen w sklepie WooCommerce lub w magazynie Fakturownii zsynchronizuje zmiany."
+msgstr ""
+
+#: src/Forms/Integration/StockForm.php:110
+msgid "ID magazynu"
+msgstr ""
+
+#: src/Forms/Integration/StockForm.php:111
+msgid "Wybierz magazyn z którym chcesz się połączyć"
+msgstr ""
+
+#: src/Forms/Integration/StockForm.php:117
+msgid "Nowe produkty"
+msgstr ""
+
+#: src/Forms/Integration/StockForm.php:118
+msgid "Włącz dodawanie produktów do magazynu Fakturowni"
+msgstr ""
+
+#: src/Forms/Integration/StockForm.php:121
+msgid "Uwaga! Dodawanie produktu nie ustawia ilości produktu w serwisie fakturownia.pl. Opcja umożliwia dodanie nowego produktu podczas wystawiania faktury. Produkt zostanie dodany jeśli nie został odnaleziony produkt po ID produktu lub kodzie produktu."
+msgstr ""
+
+#: src/Forms/Integration/StockForm.php:126
+msgid "Adres webhooka"
+msgstr ""
+
+#: src/Forms/Integration/StockForm.php:136
+msgid "Token webhooka"
+msgstr ""
+
+#: src/GTU.php:20
+#: src/ProcedureDesignations.php:47
+msgid "brak"
+msgstr ""
+
+#: src/GTU.php:29
+msgid "Kod GTU Fakturownia"
+msgstr ""
+
+#: src/GTU.php:31
+msgid "Oznaczenie grup towarów i usług dla Fakturowni"
+msgstr ""
+
+#: src/InvoicesIntegration.php:102
+#: src/InvoicesIntegration.php:426
+#: src/WoocommerceIntegration.php:51
+msgid "Fakturownia"
+msgstr ""
+
+#: src/InvoicesIntegration.php:103
+msgid "Wystawiono"
+msgstr ""
+
+#: src/InvoicesIntegration.php:105
+msgid "Wyślij email"
+msgstr ""
+
+#. Translators: document number.
+#: src/InvoicesIntegration.php:107
+#, php-format
+msgid "Dla tego zamówienia istnieje dokument %1$s! Utworzyć nowy? Istniejący dokument należy obsłużyć w Fakturowni."
+msgstr ""
+
+#: src/InvoicesIntegration.php:293
+msgid "Chcę otrzymać fakturę VAT"
+msgstr ""
+
+#: src/InvoicesIntegration.php:306
+msgid "Chcę otrzymać fakturę bez VAT"
+msgstr ""
+
+#: src/InvoicesIntegration.php:320
+msgid "Chcę otrzymać rachunek"
+msgstr ""
+
+#: src/InvoicesIntegration.php:333
+#: src/WoocommerceIntegration.php:72
+msgid "VAT"
+msgstr "Numer NIP"
+
+#: src/InvoicesIntegration.php:334
+#: assets-src/blocks/vat-number/vat-input/index.js:203
+#: assets/js/blocks/vat-number/frontend.js:3
+msgid "Numer NIP"
+msgstr ""
+
+#: src/InvoicesIntegration.php:411
+msgid "Fakturownia WooCommerce"
+msgstr ""
+
+#. Translators: link
+#: src/Logger/LoggerNotices.php:42
+#, php-format
+msgid "<strong>Uwaga!</strong> Tryb debugowania wtyczki Fakturownia jest włączony. Ustawienie debugowania znajdziesz <a href=\"%s\">tutaj &rarr;</a>"
+msgstr ""
+
+#. Translators: link
+#: src/Logger/LoggerNotices.php:57
+#, php-format
+msgid "<strong>Uwaga!</strong> Blokowanie żądań API dla wtyczki Fakturownia jest włączone. Możesz je wyłączyć <a href=\"%s\">tutaj &rarr;</a>"
+msgstr ""
+
+#: src/Metabox/MetaBoxFields.php:48
+msgid "Zapłacono"
+msgstr ""
+
+#: src/Metabox/MetaBoxFields.php:57
+msgid "Data wystawienia"
+msgstr ""
+
+#: src/Metabox/MetaBoxFields.php:66
+msgid "Data sprzedaży"
+msgstr ""
+
+#: src/Metabox/MetaBoxFields.php:78
+#: src/Metabox/MetaBoxFields.php:92
+#: src/Metabox/MetaBoxFields.php:106
+msgid "Termin płatności"
+msgstr ""
+
+#: src/Metabox/MetaBoxFields.php:125
+msgid "Sposób płatności"
+msgstr ""
+
+#: src/Metabox/MetaBoxFields.php:139
+msgid "Uwagi"
+msgstr ""
+
+#: src/Metabox/MetaBoxFields.php:152
+msgid "Podpis wystawcy"
+msgstr ""
+
+#: src/Metabox/MetaBoxFields.php:165
+msgid "Podstawa zwolnienia"
+msgstr ""
+
+#: src/Metadata/BillMetadata.php:21
+#: src/Metadata/BillMetadata.php:22
+msgid "Bill"
+msgstr "Rachunek"
+
+#: src/Metadata/DocumentMetadata.php:33
+msgid "Uwaga! Kwota na fakturze jest różna od kwoty zamówienia. Różnica może wynikać z różnych sposobów wyliczania podatków dla zamówienia i faktury (zaokrąglenia)."
+msgstr ""
+
+#: src/Metadata/InvoiceCorrectionMetadata.php:19
+#: src/Metadata/InvoiceCorrectionMetadata.php:20
+msgid "Corrective invoice"
+msgstr "Faktura korygująca"
+
+#: src/Metadata/InvoiceForeignMetadata.php:19
+#: src/Metadata/InvoiceForeignMetadata.php:20
+msgid "Foreign invoice"
+msgstr "Faktura walutowa"
+
+#: src/Metadata/InvoiceMetadata.php:21
+#: src/Metadata/InvoiceMetadata.php:22
+msgid "Invoice"
+msgstr "Faktura"
+
+#: src/Metadata/InvoiceProFormaMetadata.php:19
+#: src/Metadata/InvoiceProFormaMetadata.php:20
+msgid "Proforma invoice"
+msgstr "Faktura proforma"
+
+#: src/Metadata/InvoiceProFormaWithoutVatMetadata.php:19
+#: src/Metadata/InvoiceProFormaWithoutVatMetadata.php:20
+msgid "Proforma invoice without VAT"
+msgstr "Faktura proforma bez VAT"
+
+#: src/Metadata/InvoiceWithoutVatMetadata.php:19
+#: src/Metadata/InvoiceWithoutVatMetadata.php:20
+msgid "Invoice without VAT"
+msgstr "Faktura bez VAT"
+
+#: src/Metadata/ReceiptMetadata.php:21
+#: src/Metadata/ReceiptMetadata.php:22
+msgid "Receipt"
+msgstr "Paragon"
+
+#: src/ProcedureDesignations.php:23
+msgid "Oznaczenie transakcji przychodowej"
+msgstr ""
+
+#: src/ProcedureDesignations.php:25
+msgid "Oznaczenie transakcji przychodowej da Fakturowni"
+msgstr ""
+
+#: src/Product/FakturowniaProductId.php:51
+msgid "Produkt w Fakturowni"
+msgstr ""
+
+#: src/Product/FakturowniaProductId.php:52
+msgid "Wprowadź produkt"
+msgstr ""
+
+#: src/Product/FakturowniaProductId.php:55
+msgid "W przypadku wybranego magazynu szuka produktu bezpośrednio w nim."
+msgstr ""
+
+#: src/Product/FakturowniaProductUpdater.php:53
+msgid "Product is not connected to Fakturownia warehouse. Please connect the product to enable synchronization."
+msgstr ""
+
+#. translators: %s errors from response
+#: src/Product/FakturowniaProductUpdater.php:73
+#, php-format
+msgid "Could not connect with Fakturownia's API while trying to update product: %s"
+msgstr ""
+
+#. translators: %s errors from response
+#: src/Product/FakturowniaProductUpdater.php:81
+#, php-format
+msgid "Error occured while trying to update: %s"
+msgstr ""
+
+#: src/SupportedDocuments.php:62
+msgid "Wystaw fakturę"
+msgstr ""
+
+#: src/SupportedDocuments.php:63
+#: src/SupportedDocuments.php:110
+#: src/SupportedDocuments.php:134
+#: src/SupportedDocuments.php:159
+#: src/SupportedDocuments.php:182
+#: src/SupportedDocuments.php:205
+#: src/SupportedDocuments.php:229
+msgid "parametry"
+msgstr ""
+
+#: src/SupportedDocuments.php:84
+msgid "Wystaw korektę"
+msgstr ""
+
+#: src/SupportedDocuments.php:109
+msgid "Wystaw fakturę bez VAT"
+msgstr ""
+
+#: src/SupportedDocuments.php:133
+msgid "Wystaw pro formę"
+msgstr ""
+
+#: src/SupportedDocuments.php:158
+msgid "Wystaw pro formę bez VAT"
+msgstr ""
+
+#: src/SupportedDocuments.php:181
+msgid "Wystaw rachunek"
+msgstr ""
+
+#: src/SupportedDocuments.php:204
+msgid "Wystaw paragon"
+msgstr ""
+
+#: src/SupportedDocuments.php:228
+msgid "Wystaw fakturę walutową"
+msgstr ""
+
+#: src/User.php:40
+msgid "Numer VAT"
+msgstr ""
+
+#: src/WoocommerceIntegration.php:52
+msgid "Wystawianie faktur w serwisie fakturownia.pl. <a href=\"https://www.wpdesk.pl/sk/woocommerce-fakturownia-woo-docs/\" target=\"_blank\">Instrukcja konfiguracji &rarr;</a>"
+msgstr ""
+
+#: src/WoocommerceIntegration.php:73
+msgid "Vat number"
+msgstr "Uzupełnij NIP"
+
+#: templates/emails/faktura-correction.php:10
+#: templates/emails/plain/faktura-correction.php:14
+#, php-format
+msgid "W załączniku przesyłamy fakturę korygującą do zamówienia %s."
+msgstr ""
+
+#: templates/emails/faktura-correction.php:13
+#, php-format
+msgid "Faktura korygująca do zamówienia: <a href=\"%s\"><b>Pobierz PDF.</b></a>"
+msgstr ""
+
+#: templates/emails/faktura-proforma.php:10
+#: templates/emails/plain/faktura-proforma.php:14
+#, php-format
+msgid "W załączniku przesyłamy fakturę proforma do zamówienia %s."
+msgstr ""
+
+#: templates/emails/faktura-proforma.php:13
+#: templates/emails/faktura.php:13
+#, php-format
+msgid "Faktura do zamówienia: <a href=\"%s\"><b>Pobierz PDF.</b></a>"
+msgstr ""
+
+#: templates/emails/faktura.php:10
+#: templates/emails/plain/faktura.php:14
+#, php-format
+msgid "W załączniku przesyłamy fakturę do zamówienia %s."
+msgstr ""
+
+#: templates/emails/paragon.php:10
+#: templates/emails/plain/receipt.php:14
+#, php-format
+msgid "W załączniku przesyłamy paragon do zamówienia %s."
+msgstr ""
+
+#: templates/emails/paragon.php:13
+#, php-format
+msgid "Paragon do zamówienia: <a href=\"%s\"><b>Pobierz PDF.</b></a>"
+msgstr ""
+
+#: templates/emails/plain/faktura-correction.php:17
+#, php-format
+msgid "Faktura korygująca do zamówienia: %s"
+msgstr ""
+
+#: templates/emails/plain/faktura-proforma.php:16
+#: templates/emails/plain/faktura.php:17
+#, php-format
+msgid "Faktura do zamówienia: %s"
+msgstr ""
+
+#: templates/emails/plain/rachunek.php:14
+#: templates/emails/rachunek.php:10
+#, php-format
+msgid "W załączniku przesyłamy rachunek do zamówienia %s."
+msgstr ""
+
+#: templates/emails/plain/rachunek.php:16
+#, php-format
+msgid "Rachunek do zamówienia: %s"
+msgstr ""
+
+#: templates/emails/plain/receipt.php:16
+#, php-format
+msgid "Paragon do zamówienia: %s"
+msgstr ""
+
+#: templates/emails/rachunek.php:13
+#, php-format
+msgid "Rachunek do zamówienia: <a href=\"%s\"><b>Pobierz PDF.</b></a>"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/ltv-dashboard-widget/src/DashboardWidget.php:65
+#: DashboardWidget.php:68
+msgid "Grow your business with WP Desk"
+msgstr "Rozwijaj swój biznes razem z WP Desk"
+
+#: vendor_prefixed/wpdesk/ltv-dashboard-widget/src/DashboardWidget.php:291
+#: DashboardWidget.php:266
+msgid "Buy now"
+msgstr "Kup teraz"
+
+#: vendor_prefixed/wpdesk/ltv-dashboard-widget/src/DashboardWidget.php:293
+#: DashboardWidget.php:269
+msgid "Learn more"
+msgstr "Odwiedź"
+
+#: vendor_prefixed/wpdesk/ltv-dashboard-widget/src/DashboardWidget.php:296
+#: DashboardWidget.php:272
+msgid "Download"
+msgstr "Pobierz"
+
+#: vendor_prefixed/wpdesk/ltv-dashboard-widget/src/DashboardWidget.php:307
+#: DashboardWidget.php:364
+msgid "More info"
+msgstr "Więcej"
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:189
+#: Basic_Requirement_Checker.php:202
+#, php-format
+msgid "The &#8220;%s&#8221; plugin cannot run on PHP versions older than %s. Please contact your host and ask them to upgrade."
+msgstr "Wtyczka &#8220;%s&#8221; nie może działać na wersjach PHP starszych niż %s. Skontaktuj się z administratorem hostingu i poproś o aktualizację wersji PHP."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:192
+#: Basic_Requirement_Checker.php:206
+#, php-format
+msgid "The &#8220;%s&#8221; plugin cannot run on WordPress versions older than %s. Please update WordPress."
+msgstr "Wtyczka &#8220;%s&#8221; nie może działać na wersjach WordPressa starszych niż %s. Wykonaj aktualizację WordPressa."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:195
+#: Basic_Requirement_Checker.php:210
+#, php-format
+msgid "The &#8220;%s&#8221; plugin cannot run on WooCommerce versions older than %s. Please update WooCommerce."
+msgstr "Wtyczka &#8220;%s&#8221; nie może działać na wersjach WooCommerce starszych niż %s. Wykonaj aktualizację WooCommerce."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:198
+#: Basic_Requirement_Checker.php:214
+#, php-format
+msgid "The &#8220;%s&#8221; plugin cannot run without OpenSSL module version at least %s. Please update OpenSSL module."
+msgstr "Wtyczka &#8220;%s&#8221; nie może działać bez aktywacji OpenSSL co najmniej w wersji %s. Wykonaj aktualizację OpenSSL."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:285
+#: Basic_Requirement_Checker.php:308
+#, php-format
+msgid "The &#8220;%1$s&#8221; plugin requires at least %2$s version of %3$s to work correctly. Please update it to its latest release."
+msgstr "Do poprawnego działania wtyczki &#8220;%1$s&#8221; wymagana jest wtyczka %3$s co najmniej w wersji %2$s. Wykonaj jej aktualizację."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:391
+#: Basic_Requirement_Checker.php:395
+#, php-format
+msgid "The &#8220;%s&#8221; plugin cannot run without %s active. Please install and activate %s plugin."
+msgstr "Wtyczka &#8220;%s&#8221; nie może działać bez aktywacji %s. Zainstaluj i aktywuj wtyczkę %s."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:428
+#, php-format
+msgid "The &#8220;%s&#8221; plugin requires free %s plugin. <a href=\"%s\">Install %s</a>"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:434
+#: Basic_Requirement_Checker.php:465
+#, php-format
+msgid "The &#8220;%s&#8221; plugin requires activating %s plugin. <a href=\"%s\">Activate %s</a>"
+msgstr "Wtyczka &#8220;%s&#8221; wymaga aktywnej wtyczki %s. <a href=\"%s\">Włącz %s</a>"
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:476
+#: Basic_Requirement_Checker.php:512
+#, php-format
+msgid "The &#8220;%s&#8221; plugin cannot run without %s PHP module installed. Please contact your host and ask them to install %s."
+msgstr "Wtyczka &#8220;%s&#8221; nie może działać bez modułu PHP: %s. Skontaktuj się z administratorem hostingu i poproś o instalację %s."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:501
+#: Basic_Requirement_Checker.php:540
+#, php-format
+msgid "The &#8220;%s&#8221; plugin cannot run without %s PHP setting set to %s. Please contact your host and ask them to set %s."
+msgstr "Wtyczka &#8220;%s&#8221; nie może działać bez ustawienia PHP %s ustawionego na %s. Skontaktuj się z administratorem hostingu i poproś o ustawienie %s."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker_With_Update_Disable.php:29
+#: Basic_Requirement_Checker_With_Update_Disable.php:27
+#, php-format
+msgid "The &#8220;%s&#8221; plugin is temporarily disabled since the required %s plugin is being upgraded."
+msgstr "Wtyczka &#8220;%s&#8221; została chwilowo wyłączona, ponieważ wymagana wtyczka %s jest właśnie aktualizowana."
+
+#: vendor_prefixed/wpdesk/wp-builder/src/Plugin/AbstractPlugin.php:181
+#: Plugin/AbstractPlugin.php:195
+msgid "Support"
+msgstr "Wsparcie"
+
+#: vendor_prefixed/wpdesk/wp-builder/src/Plugin/AbstractPlugin.php:184
+#: Plugin/AbstractPlugin.php:201
+msgid "Docs"
+msgstr "Dokumentacja"
+
+#: vendor_prefixed/wpdesk/wp-builder/src/Plugin/AbstractPlugin.php:188
+#: Plugin/AbstractPlugin.php:208
+msgid "Settings"
+msgstr "Ustawienia"
+
+#: vendor_prefixed/wpdesk/wp-invoices-lump-sum/src/Settings/LumpSumProductFields.php:63
+#: vendor_prefixed/wpdesk/wp-invoices-lump-sum/src/Settings/LumpSumSettingsFields.php:17
+msgid "Lump sum"
+msgstr "Ryczałt"
+
+#: vendor_prefixed/wpdesk/wp-invoices-lump-sum/src/Settings/LumpSumProductFields.php:63
+msgid "Select lump sum"
+msgstr "Wybierz stawkę ryczałtu"
+
+#: vendor_prefixed/wpdesk/wp-invoices-lump-sum/src/Settings/LumpSumSettingsFields.php:17
+msgid "Enable lump sum"
+msgstr "Jestem ryczałtowcem"
+
+#: vendor_prefixed/wpdesk/wp-invoices-lump-sum/src/Settings/LumpSumSettingsFields.php:17
+msgid "Enable"
+msgstr "Włącz ryczałt"
+
+#: vendor_prefixed/wpdesk/wp-invoices-lump-sum/src/Settings/LumpSumSettingsFields.php:17
+msgid "Default value"
+msgstr "Domyślna stawka ryczałtu"
+
+#: vendor_prefixed/wpdesk/wp-invoices-lump-sum/src/Settings/LumpSumSettingsFields.php:17
+msgid "Default lump sum value."
+msgstr "Domyślna stawka ryczałtu."
+
+#: vendor_prefixed/wpdesk/wp-invoices-lump-sum/src/Settings/LumpSumValues.php:11
+msgid "Select"
+msgstr "Wybierz"
+
+#: vendor_prefixed/wpdesk/wp-invoices-lump-sum/src/Settings/LumpSumValues.php:11
+msgid "No lump sum"
+msgstr "Brak stawki ryczałtu"
+
+#: vendor_prefixed/wpdesk/wp-invoices-lump-sum/src/Settings/LumpSumValues.php:11
+msgid "not subject to"
+msgstr "nie podlega"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+#: deprecated/wpdesk-logger.php:70
+msgid "Disabled"
+msgstr "Wyłączono"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+#: deprecated/wpdesk-logger.php:71
+msgid "Emergency"
+msgstr "Wypadek"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+#: deprecated/wpdesk-logger.php:72
+msgid "Alert"
+msgstr "Ostrzeżenie"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+#: deprecated/wpdesk-logger.php:73
+msgid "Critical"
+msgstr "Błąd krytyczny"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+#: deprecated/wpdesk-logger.php:74
+msgid "Error"
+msgstr "Błąd"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+#: deprecated/wpdesk-logger.php:75
+msgid "Warning"
+msgstr "Ostrzeżenie"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+#: deprecated/wpdesk-logger.php:76
+msgid "Notice"
+msgstr "Powiadomienie"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+#: deprecated/wpdesk-logger.php:77
+msgid "Info"
+msgstr "Informacja"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+#: deprecated/wpdesk-logger.php:78
+msgid "Debug"
+msgstr "Debugowanie"
+
+#. Translators: directory.
+#: vendor_prefixed/wpdesk/wp-logs/src/WP/WPCapture.php:23
+#: WP/WPCapture.php:25
+#, php-format
+msgid "Can not enable WP Desk Debug log! Cannot create directory %s or this directory is not writeable!"
+msgstr "Nie można włączyć WP Desk Debug log! Nie można utworzyć katalogu %s lub brak uprawnień do zapisu w tym katalogu!"
+
+#. Translators: directory.
+#: vendor_prefixed/wpdesk/wp-logs/src/WP/WPCapture.php:36
+#: WP/WPCapture.php:44
+#, php-format
+msgid "Can not enable WP Desk Debug log! Cannot create file %s!"
+msgstr "Nie można włączyć logowania błędów za pomocą WP Desk Debug! Nie można utworzyć pliku %s!"
+
+#: vendor_prefixed/wpdesk/wp-woocommerce-eu-vat/src/Integration/Checkout.php:176
+#: vendor_prefixed/wpdesk/wp-woocommerce-eu-vat/src/Integration/ValidateOSS.php:101
+#: src/Integration/Checkout.php:190
+#: src/Integration/ValidateOSS.php:102
+#, php-format
+msgid "You have entered an invalid VAT number (%1$s) for your billing country (%2$s)."
+msgstr "Wpisano niewłaściwy numer VAT (%1$s) dla podanego w danych płatności kraju(%2$s)."
+
+#. translators: %1$s ip address, %2$s country.
+#: vendor_prefixed/wpdesk/wp-woocommerce-eu-vat/src/Integration/Checkout.php:193
+#: vendor_prefixed/wpdesk/wp-woocommerce-eu-vat/src/Integration/ValidateOSS.php:120
+#: src/Integration/Checkout.php:208
+#: src/Integration/ValidateOSS.php:122
+#, php-format
+msgid "Your IP Address (%1$s) does not match your billing country (%2$s). European VAT laws require your IP address to match your billing country when purchasing digital goods in the EU. Please confirm you are located within your billing country using the checkbox below."
+msgstr "Twój Adres IP (%1$s) nie odpowiada podanemu dla płatności krajowi (%2$s). Europejskie prawo w zakresie VAT wymaga, aby Twój adres IP odpowiadał podanemu krajowi dla zakupów produktów cyfrowych w Unii Europejskiej. Proszę potwierdź, że na stałe znajdujesz się w podanym przez Ciebie kraju płatności zaznaczając poniższe pole."
+
+#. Translators: vat type like 20%.
+#: vendor_prefixed/wpdesk/wp-woocommerce-eu-vat/src/Integration/Formatter.php:61
+#: src/Integration/Formatter.php:63
+#, php-format
+msgid "VAT ID: %s"
+msgstr "VAT ID: %s"
+
+#. translators: %1$s - plugin name, %2$s - plugin version, %3$s - docs link about moss.
+#: vendor_prefixed/wpdesk/wp-woocommerce-eu-vat/src/Integration/Notices.php:52
+#: src/Integration/Notices.php:56
+#, php-format
+msgid "<strong>%1$s plugin from version %2$s supports MOSS.</strong> <a href=\"%3$s\" target=\"_blank\">Here</a> you can read how to configure it. You no longer need any other plugins for invoicing with MOSS standard. Please deactivate them."
+msgstr "<strong>Wtyczka %1$s od wersji %2$s obsługuje MOSS.</strong> Możesz o tym przeczytać  <a href=\"%3$s\" target=\"_blank\">tutaj</a>. Nie musisz używać innych wtyczek aby wystawiać faktury zgodnie ze standardami MOSS. Dezaktywuj je proszę."
+
+#. translators: settings link.
+#: vendor_prefixed/wpdesk/wp-woocommerce-eu-vat/src/Integration/Notices.php:60
+#: src/Integration/Notices.php:64
+#, php-format
+msgid "Tax rounding at subtotals is off. Please check \"Rounding\" option for invoice plugin to function properly. To find it click <a href=\"%s\">here</a> or go to Integration tax settings."
+msgstr "WooCommerce ma wyłączone zaokrąglanie podatków na podsumach. Do prawidłowego działania wtyczki do wystawiania faktur konieczne jest włączenie zaokrąglania podatków na podsumie, a nie per wiersz. Kliknij <a href=\"%s\" >tutaj</a> aby przejść do konfiguracji podatków."
+
+#. translators: %s is the billing country full name, e.g. Finland, France, or Spain.
+#: vendor_prefixed/wpdesk/wp-woocommerce-eu-vat/src/Integration/Views/location-confirmation-field.php:16
+#: assets-src/blocks/vat-number/ip-address-notice/index.js:85
+#: assets/js/blocks/vat-number/frontend.js:3
+#: src/Integration/Views/location-confirmation-field.php:11
+#, php-format,js-format
+msgid "I am established, have my permanent address, or usually reside within <strong>%s</strong>."
+msgstr "Mam siedzibę, stały adres zamieszkania lub zazwyczaj mieszkam w tym kraju: <strong>%s</strong>."
+
+#: vendor_prefixed/wpdesk/wp-woocommerce-eu-vat/src/Integration/Views/vat-confirmation-field.php:14
+#: src/Integration/Views/vat-confirmation-field.php:9
+msgid "I am already registered in VAT EU."
+msgstr "Jestem już zarejestrowany w VAT EU."
+
+#: vendor_prefixed/wpdesk/wp-woocommerce-eu-vat/src/Integration/Views/vies-order-metabox.php:24
+#: src/Integration/Views/vies-order-metabox.php:20
+msgid "B2B"
+msgstr "B2B"
+
+#: vendor_prefixed/wpdesk/wp-woocommerce-eu-vat/src/Integration/Views/vies-order-metabox.php:27
+#: src/Integration/Views/vies-order-metabox.php:21
+msgid "Yes"
+msgstr "Tak"
+
+#: vendor_prefixed/wpdesk/wp-woocommerce-eu-vat/src/Integration/Views/vies-order-metabox.php:27
+#: src/Integration/Views/vies-order-metabox.php:21
+msgid "No"
+msgstr "Nie"
+
+#: vendor_prefixed/wpdesk/wp-woocommerce-eu-vat/src/Integration/Views/vies-order-metabox.php:41
+#: src/Integration/Views/vies-order-metabox.php:30
+msgid "Validation was not possible"
+msgstr "Walidacja nie była możliwa"
+
+#: vendor_prefixed/wpdesk/wp-woocommerce-eu-vat/src/Integration/Views/vies-order-metabox.php:50
+#: vendor_prefixed/wpdesk/wp-woocommerce-eu-vat/src/Integration/Views/vies-order-metabox.php:96
+#: src/Integration/Views/vies-order-metabox.php:38
+#: src/Integration/Views/vies-order-metabox.php:69
+msgid "Self declared"
+msgstr "Zadeklarowany przez klienta"
+
+#: vendor_prefixed/wpdesk/wp-woocommerce-eu-vat/src/Integration/Views/vies-order-metabox.php:61
+#: src/Integration/Views/vies-order-metabox.php:43
+msgid "IP Address"
+msgstr "Adres IP"
+
+#: vendor_prefixed/wpdesk/wp-woocommerce-eu-vat/src/Integration/Views/vies-order-metabox.php:64
+#: vendor_prefixed/wpdesk/wp-woocommerce-eu-vat/src/Integration/Views/vies-order-metabox.php:82
+#: vendor_prefixed/wpdesk/wp-woocommerce-eu-vat/src/Integration/Views/vies-order-metabox.php:91
+#: src/Integration/Views/vies-order-metabox.php:44
+#: src/Integration/Views/vies-order-metabox.php:60
+#: src/Integration/Views/vies-order-metabox.php:66
+msgid "Unknown"
+msgstr "Nieznany"
+
+#: vendor_prefixed/wpdesk/wp-woocommerce-eu-vat/src/Integration/Views/vies-order-metabox.php:69
+#: src/Integration/Views/vies-order-metabox.php:47
+msgid "IP Country"
+msgstr "IP kraju"
+
+#: vendor_prefixed/wpdesk/wp-woocommerce-eu-vat/src/Integration/Views/vies-order-metabox.php:77
+#: src/Integration/Views/vies-order-metabox.php:55
+msgid "(self-declared)"
+msgstr "(zadeklarowany przez klienta)"
+
+#: vendor_prefixed/wpdesk/wp-woocommerce-eu-vat/src/Integration/Views/vies-order-metabox.php:88
+#: src/Integration/Views/vies-order-metabox.php:65
+msgid "Billing Country"
+msgstr "Kraj płatności"
+
+#: vendor_prefixed/wpdesk/wp-woocommerce-eu-vat/src/Vies/Client.php:39
+#: src/Vies/Client.php:46
+msgid "Error communicating with VIES service - please try again"
+msgstr "Błąd komunikacji z serwerem sprawdzającym VAT - proszę spróbować ponownie"
+
+#: vendor_prefixed/wpdesk/wp-woocommerce-eu-vat/src/Vies/ViesOrderMetaBox.php:63
+#: src/Vies/ViesOrderMetaBox.php:68
+msgid "EU VAT"
+msgstr "EU VAT"
+
+#: vendor_prefixed/wpdesk/wp-woocommerce-eu-vat/src/Vies/ViesOrderMetaBox.php:92
+#: src/Vies/ViesOrderMetaBox.php:98
+msgid "This order is out of scope for EU VAT."
+msgstr "To zamówienie jest poza zakresem EU VAT."
+
+#: vendor_prefixed/wpdesk/wp-woocommerce-eu-vat/src/Vies/ViesOrderMetaBox.php:98
+#: src/Vies/ViesOrderMetaBox.php:106
+msgid "VAT ID"
+msgstr "VAT ID"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/LicenseServer/PluginExternalBlocking.php:32
+#: src/LicenseServer/PluginExternalBlocking.php:39
+#, php-format
+msgid "<b>Warning!</b> You're blocking external requests which means you won't be able to get %1$s updates. Please add %2$s to %3$s."
+msgstr "<b>Ostrzeżenie!</b> Blokujesz zewnętrzne żądania, co oznacza, że nie będziesz mógł otrzymywać aktualizacji %1$s. Proszę dodać %2$s do %3$s."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/LicenseServer/PluginUpgrade.php:81
+#: LicenseServer/PluginUpgrade.php:93
+#, php-format
+msgid "Error while connecting to remote server %s. Please contact your hosting provider or try again later. Errors:  "
+msgstr "Błąd podczas łączenia się ze zdalnym serwerem %s. Skontaktuj się z dostawcą usługi hostingowej lub spróbuj ponownie później. Błędy:"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/LicenseServer/PluginUpgrade.php:152
+msgid "License server is currently unavailable. Please, try again later."
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/LicenseServer/PluginUpgrade.php:154
+#, php-format
+msgid "Error while connecting to remote server %1$s. Please contact with your hosting provider. Cannot parse response. Response code: %2$s Message: %3$s"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/LicenseServer/PluginUpgrade.php:157
+#, php-format
+msgid "Error while connecting to remote server %1$s. Please contact with your hosting provider. Cannot parse response: %2$s"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/templates/impossible-to-upgrade.php:12
+#: templates/impossible-to-upgrade.php:10
+#, php-format
+msgid "This version of %1$s plugin cannot be automatically upgraded. Download the plugin from %2$syour account%3$s to receive automatic updates in future."
+msgstr "Ta wersja wtyczki %1$s nie może być automatycznie zaktualizowana. Pobierz wtyczkę ze %2$sswojego konta%3$s, aby otrzymywać automatyczne aktualizacje w przyszłości."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/OptOut.php:42
+#: src/PSR/WPDesk/Tracker/OptOut.php:45
+#, php-format
+msgid "You successfully opted out of collecting usage data by %1$s. If you change your mind, you can always opt in later in the plugin's quick links."
+msgstr "Twoja rezygnacja ze zbierania danych użytkowania wtyczek przez %1$s została przyjęta. Jeśli zmienisz zdanie, zawsze możesz włączyć zgodę ponownie za pomocą szybkich linków na liście wtyczek."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/PluginActionLinks.php:70
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-notice.php:41
+#: src/PSR/WPDesk/Tracker/PluginActionLinks.php:55
+msgid "Enable usage tracking"
+msgstr "Włącz śledzenie użycia"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/PluginActionLinks.php:75
+#: src/PSR/WPDesk/Tracker/PluginActionLinks.php:58
+msgid "Disable usage tracking"
+msgstr "Wyłącz śledzenie użycia"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:23
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:15
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-notice.php:19
+#: src/PSR/WPDesk/Tracker/views/tracker-connect.php:15
+#: src/views/tracker-connect.php:7
+#: src/views/tracker-notice.php:7
+#, php-format
+msgid "Hey %s,"
+msgstr "Hej %s,"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:26
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:18
+#: src/PSR/WPDesk/Tracker/views/tracker-connect.php:16
+#: src/views/tracker-connect.php:8
+msgid "Please help us improve our plugins! If you opt-in, we will collect some non-sensitive data and usage information anonymously. If you skip this, that's okay! All plugins will work just fine."
+msgstr "Proszę pomóż nam udoskonalić nasze wtyczki! Jeśli się zgodzisz, będziemy zbierać niewrażliwe dane użytkowania anonimowo. Jeśli pominiesz ten krok, w porządku! Wszystkie wtyczki będą działać niezależnie od Twojej decyzji."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:35
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:27
+#: src/PSR/WPDesk/Tracker/views/tracker-connect.php:21
+#: src/views/tracker-connect.php:13
+msgid "Allow & Continue &rarr;"
+msgstr "Pozwól i kontynuuj &rarr;"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:40
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:32
+#: src/PSR/WPDesk/Tracker/views/tracker-connect.php:22
+#: src/views/tracker-connect.php:14
+msgid "Skip"
+msgstr "Pomiń"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:47
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:39
+#: src/PSR/WPDesk/Tracker/views/tracker-connect.php:27
+#: src/views/tracker-connect.php:19
+msgid "What permissions are being granted?"
+msgstr "Jakie uprawnienia są przyznawane?"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:56
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:48
+#: src/PSR/WPDesk/Tracker/views/tracker-connect.php:34
+#: src/views/tracker-connect.php:26
+msgid "Your Site Overview"
+msgstr "Dane witryny"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:59
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:51
+#: src/PSR/WPDesk/Tracker/views/tracker-connect.php:35
+#: src/views/tracker-connect.php:27
+msgid "WP version, PHP info"
+msgstr "Wersja WP, wersja PHP"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:67
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:59
+#: src/PSR/WPDesk/Tracker/views/tracker-connect.php:41
+#: src/views/tracker-connect.php:33
+msgid "Plugin Usage"
+msgstr "Dane użytkowania wtyczek"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:70
+#: src/PSR/WPDesk/Tracker/views/tracker-connect.php:42
+#, php-format
+msgid "Current settings and usage information of %1$s plugins"
+msgstr "Ustawienia i informacje o użytkowaniu wtyczek %1$s"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:78
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:70
+#: src/PSR/WPDesk/Tracker/views/tracker-connect.php:48
+#: src/views/tracker-connect.php:40
+msgid "Your Store Overview"
+msgstr "Dane sklepu"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:81
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:73
+#: src/PSR/WPDesk/Tracker/views/tracker-connect.php:49
+#: src/views/tracker-connect.php:41
+msgid "Anonymized and non-sensitive store usage information"
+msgstr "Tylko niewrażliwe i anonimowe dane o użytkowaniu sklepu"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:91
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:83
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-notice.php:27
+#: src/PSR/WPDesk/Tracker/views/tracker-connect.php:55
+#: src/views/tracker-connect.php:47
+#: src/views/tracker-notice.php:9
+msgid "Find out more &raquo;"
+msgstr "Dowiedz się więcej &raquo;"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:62
+#: src/views/tracker-connect.php:34
+msgid "Current settings and usage information of WP Desk plugins"
+msgstr "Ustawienia i informacje o użytkowaniu wtyczek WP Desk"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:11
+#: src/views/tracker-deactivate.php:3
+#, php-format
+msgid "You are deactivating %s plugin."
+msgstr "Dezaktywujesz wtyczkę %s."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:19
+#: src/views/tracker-deactivate.php:9
+msgid " If you have a moment, please let us know why you are deactivating plugin (anonymous feedback):"
+msgstr " Jeśli masz chwilę, prosimy daj nam znać dlaczego dezaktywujesz wtyczkę (anonimowa opinia):"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:28
+#: src/views/tracker-deactivate.php:16
+msgid "The plugin suddenly stopped working"
+msgstr "Wtyczka nagle przestała działać"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:38
+#: src/views/tracker-deactivate.php:24
+msgid "The plugin broke my site"
+msgstr "Wtyczka zepsuła moją stronę"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:48
+#: src/views/tracker-deactivate.php:32
+msgid "I found a better plugin"
+msgstr "Znalazłem lepszą wtyczkę"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:53
+#: src/views/tracker-deactivate.php:35
+msgid "What's the plugin's name?"
+msgstr "Jaka to wtyczka?"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:63
+#: src/views/tracker-deactivate.php:43
+msgid "I only needed the plugin for a short period"
+msgstr "Potrzebowałem wtyczki tylko przez krótki okres"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:73
+#: src/views/tracker-deactivate.php:51
+msgid "I no longer need the plugin"
+msgstr "Nie potrzebuję już wtyczki"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:83
+#: src/views/tracker-deactivate.php:59
+msgid "It's a temporary deactivation. I'm just debugging an issue."
+msgstr "Jest to tymczasowa dezaktywacja, debuguję problem."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:93
+#: src/views/tracker-deactivate.php:67
+msgid "Other"
+msgstr "Inny"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:98
+#: src/views/tracker-deactivate.php:70
+msgid "Kindly tell us the reason so we can improve"
+msgstr "Napisz nam powód abyśmy mogli go poprawić"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:107
+#: src/views/tracker-deactivate.php:77
+msgid "Cancel"
+msgstr "Anuluj"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:110
+#: src/views/tracker-deactivate.php:78
+msgid "Skip &amp; Deactivate"
+msgstr "Pomiń i dezaktywuj"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-notice.php:22
+#: src/views/tracker-notice.php:8
+msgid "We need your help to improve <strong>WP Desk plugins</strong>, so they are more useful for you and the rest of <strong>30,000+ users</strong>. By collecting data on how you use our plugins, you will help us a lot. We will not collect any sensitive data, so you can feel safe."
+msgstr "Potrzebujemy Twojej pomocy, aby dalej rozwijać <strong>wtyczki WP Desk</strong> i były one jeszcze bardziej pomocne dla Ciebie i pozostałych ponad <strong>30 000 użytkowników</strong>. Zbierając dane na temat tego jak korzystasz z naszych wtyczek bardzo nam w tym pomożesz. Nie będziemy zbierać żadnych danych wrażliwych, więc możesz czuć się bezpiecznie."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-opt-out-notice.php:11
+#: src/views/tracker-opt-out-notice.php:3
+msgid "You successfully opted out of collecting usage data by WP Desk. If you change your mind, you can always opt in later in the plugin's quick links."
+msgstr "Twoja rezygnacja ze zbierania danych użytkowania wtyczek przez WP Desk została przyjęta. Jeśli zmienisz zdanie, zawsze możesz włączyć zgodę ponownie za pomocą szybkich linków na liście wtyczek."
+
+#. Plugin URI of the plugin
+#: woocommerce-fakturownia.php
+msgid "https://www.wpdesk.pl/sklep/fakturownia-woocommerce/"
+msgstr ""
+
+#. Author URI of the plugin
+#: woocommerce-fakturownia.php
+msgid "https://www.wpdesk.pl/"
+msgstr ""
+
+#. Translators: woocommerce logs
+#: src/Forms/Integration/DebugForm.php:42
+msgid "Włączenie spowoduje utworzenie pliku fakturownia.log. Zapis logów można sprawdzić <a href=\"%s\">tutaj &rarr;</a><br/><a href=\"https://wpdesk.link/fakturownia-debugowanie\" target=\"_blank\">Przeczytaj jak przeprowadzić proces debugowania &rarr;</a>"
+msgstr ""
+
+#: src/WoocommerceIntegration.php:52
+msgid "Wystawianie faktur w serwisie fakturownia.pl. <a href=\"https://www.wpdesk.pl/docs/fakturownia-woocommerce-docs/\" target=\"_blank\">Instrukcja konfiguracji &rarr;</a>"
+msgstr ""
+
+#: Basic_Requirement_Checker.php:456
+#, php-format
+msgid "The &#8220;%s&#8221; plugin requires free %s plugin. <a href=\"%s\">Install%s</a>"
+msgstr "Wtyczka &#8220;%s&#8221; wymaga bezpłatnej wtyczki %s. <a href=\"%s\">Zainstaluj %s</a>"
+
+#: LicenseServer/PluginUpgrade.php:175
+#, php-format
+msgid "Error while connecting to remote server %s. Please contact with your hosting provider. Cannot parse response. Response code: %s Message: %s"
+msgstr "Błąd podczas łączenia się ze zdalnym serwerem %s. Skontaktuj się z dostawcą usługi hostingowej. Nie można przeanalizować odpowiedzi. Kod odpowiedzi: %s Wiadomość: %s"
+
+#: LicenseServer/PluginUpgrade.php:179
+#, php-format
+msgid "Error while connecting to remote server %s. Please contact with your hosting provider. Cannot parse response: %s"
+msgstr "Błąd podczas łączenia się ze zdalnym serwerem %s. Skontaktuj się z dostawcą usługi hostingowej. Nie można przeanalizować odpowiedzi: %s"
+
+#: src/class-wpdesk-tracker.php:253
+msgid "Submit &amp; Deactivate"
+msgstr "Wyślij i dezaktywuj"
+
+#: src/views/tracker-notice.php:15
+msgid "Allow"
+msgstr "Pozwól"
